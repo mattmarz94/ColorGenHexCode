@@ -7,30 +7,33 @@
   </head>
   <body>
     <div class="main">
-      <nav>
-        <h1>Color Generator</h1>
-      </nav>
-      <form class="form" id="form">
-        <input
-          type="color"
-          name="input-color"
-          class="color-selector"
-          id="color-selector"
-        />
-        <select name="color-scheme" class="color-sc" id="color-scheme">
-          <option value="">--Choose a color scheme--</option>
-          <option value="monochrome">Monochrome</option>
-          <option value="monochrome-dark">Monochrome-dark</option>
-          <option value="monochrome-light">Monochrome-light</option>
-          <option value="analogic">Analogic</option>
-          <option value="complement">Complement</option>
-          <option value="analogic-complement">Analogic-complement</option>
-          <option value="triad">Triad</option>
-        </select>
-        <button id="get-scheme">Get Color Scheme</button>
-      </form>
-      <div class="color-container">
-
+      <h1><span class="rainbow">olor</span> Generator</h1>
+      <div class="color-container" id="color-container">
+        <div id="color-info">
+          <input
+            type="color"
+            name="input-color"
+            class="color-selector"
+            id="color-selector"
+          />
+          <select name="color-scheme" class="color-sc" id="color-scheme">
+            <option value="">--Choose a color scheme--</option>
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+          </select>
+          <button id="get-scheme-btn">Get Color Scheme</button>
+        </div>
+        <div id="scheme-container">
+          <!-- SCHEME COLORS HERE -->
+        </div>
+        <div id="scheme-color-info">
+          <!-- COLOR INFO HERE -->
+        </div>
       </div>
     </div>
   </body>
