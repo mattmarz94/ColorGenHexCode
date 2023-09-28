@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="utf-8">
-    <head>
-        <!-- CSS -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="container">
-            <input type="color">
-            <select name="color-scheme" id="colorScheme">
-                <option value="">--Choose a color scheme--</option>
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-            </select>
-        </nav>
-    </body>
+  <meta charset="utf-8" />
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <h1>Color Generator</h1>
+      </nav>
+      <form class="form" id="form">
+        <input
+          type="color"
+          name="input-color"
+          class="color-selector"
+          id="color-selector"
+        />
+        <select name="color-scheme" class="color-sc" id="color-scheme">
+          <option value="">--Choose a color scheme--</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button id="get-scheme">Get Color Scheme</button>
+      </form>
+      <div class="color-container">
+
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
