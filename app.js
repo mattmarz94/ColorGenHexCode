@@ -1,18 +1,21 @@
-const colorScheme = document.getElementById("color-scheme")
-
 function colorSelector(){
        let selectedColor = document.getElementById("color-selector").value
        let colorsArray = selectedColor.split("");
        colorsArray.shift()
        // console.log(colorsArray.shift())
        let hexArray = colorsArray.join("")
-       console.log(hexArray)
+       // console.log(hexArray)
+       return hexArray
 }
-colorSelector()
+
+function modeSelector(){
+       let colorScheme = document.getElementById("color-scheme").value
+       console.log(colorScheme)
+}
 
 document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
 
-       fetch(`https://www.thecolorapi.com/scheme?hex=${colorSelector}`)
+       fetch(`https://www.thecolorapi.com/scheme?hex=${colorSelector}&mode=${modeSelector}`)
               .then(res => res.json())
               .then(data => console.log(data))
    
