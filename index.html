@@ -6,34 +6,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="main">
-      <h1><span class="rainbow">Color</span> Generator</h1>
-      <div class="color-container" id="color-container">
-        <div id="color-info">
-          <input
-            type="color"
-            id="color-selector"
-          />
-          <select name="color-scheme" class="color-scheme" id="color-scheme">
-            <option value="">--Choose a color scheme--</option>
-            <option value="monochrome">Monochrome</option>
-            <option value="monochrome-dark">Monochrome-dark</option>
-            <option value="monochrome-light">Monochrome-light</option>
-            <option value="analogic">Analogic</option>
-            <option value="complement">Complement</option>
-            <option value="analogic-complement">Analogic-complement</option>
-            <option value="triad">Triad</option>
-          </select>
-          <button id="get-scheme-btn">Get Color Scheme</button>
-        </div>
-        <div id="scheme-container">
-          <!-- SCHEME COLORS HERE -->
-        </div>
-        <div id="scheme-color-info">
-          <!-- COLOR INFO HERE -->
-        </div>
+    <h1><span class="rainbow">Color</span> Generator</h1>
+    <!-- COLOR NAV BAR -->
+    <div class="color-container" id="color-container">
+      <div id="color-info">
+        <input
+          type="color"
+          name="input-color"
+          class="color-selector"
+          id="color-selector"
+        />
+        <select name="color-scheme" class="color-scheme" id="color-scheme">
+          <option value="">--Choose a color scheme--</option>
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button id="get-scheme-btn">Get Color Scheme</button>
+      </div>
+
+      <div id="scheme-container">
+        <!-- SCHEME COLORS HERE -->
+      </div>
+      <div id="scheme-color-info">
+        <!-- COLOR INFO HERE -->
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
-  <script src="app.js"></script>
 </html>
