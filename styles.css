@@ -13,6 +13,8 @@ h1 {
     margin-top: 2em;
 }
 
+
+
 #color-container{
     width: 600px;
     height: 600px;
@@ -21,10 +23,17 @@ h1 {
     border: 2px solid black; 
     background-color: #E8E3E3;
     border-radius: 30px;
-    
+}
+
+input{
+    height: 40px;
+    width: 75px;
+    border: 2px solid #FCCFCF;
+    border-radius: 5px;
 }
 
 #color-info{
+    height: 40px;    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,6 +41,24 @@ h1 {
     border-bottom: 1px solid black;
     flex-wrap: wrap;
 }
+
+.color-scheme{
+    border: 2px solid #FCCFCF;    
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+
+#get-scheme-btn{
+    border: 2px solid #FCCFCF;
+    border-radius: 5px;    
+    height: 40px;    
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
 
 #scheme-container{
     display: flex;

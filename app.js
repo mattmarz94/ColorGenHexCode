@@ -17,15 +17,24 @@ function renderColors(data) {
 
   for (let color of data.colors) {
     chosenColers += `
-              <div class = "render-colors" style="background-color: ${color.hex.value}"></div>
+              <div class = "render-colors" style="background-color: ${color.hex.value}" data-hexcolor="${color.hex.value}"></div>
               `;
     hexNumbers += `
-              <div class = "render-hex">${color.hex.value}</div>
+              <div class = "render-hex" data-hexcolor="${color.hex.value}">${color.hex.value}</div>
               `;
   }
   document.getElementById("scheme-container").innerHTML = chosenColers;
   document.getElementById("scheme-color-info").innerHTML = hexNumbers;
 }
+
+document.addEventListener("click", (e) => {
+  if (e.target.dataset.hexcolor){
+    navigator.clipboard.writeText(e.target.dataset.hexcolor);
+    alert("copied the color: " + e.target.dataset.hexcolor)
+  } else {
+    
+  }
+})
 
 document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
   fetch(
@@ -35,4 +44,6 @@ document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
     .then((data) => renderColors(data));
 
   e.preventDefault();
+  
 });
+
