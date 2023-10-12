@@ -115,10 +115,9 @@ a {
 }
 
 /* tutorial */
-#go-home {
+.go-home {
     border-radius: 5px;
-    padding: 1em 2em;
+    padding: 1em ;
     font-size: 1em;
-    background-color: #FCCFCF;
     margin:20px 0px 50px 0;
 }
