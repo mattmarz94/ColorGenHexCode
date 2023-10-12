@@ -1,103 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,400;1,700&family=Source+Sans+3&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200;1,400;1,700&family=Source+Sans+3&display=swap");
 
-html, body {
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Mooli', sans-serif;
-    width: 600px;
-    background-color: #FFF1CC;
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Mooli", sans-serif;
+  width: 600px;
+  background-color: #fff1cc;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 2em;
+  text-align: center;
+  margin-top: 2em;
 }
 
-
-
-#color-container{
-    width: 600px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black; 
-    background-color: #E8E3E3;
-    border-radius: 30px;
+#color-container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: #e8e3e3;
+  border-radius: 30px;
 }
 
-input{
-    height: 40px;
-    width: 75px;
-    border: 2px solid #FCCFCF;
-    border-radius: 5px;
+input {
+  height: 40px;
+  width: 75px;
+  border: 2px solid #fccfcf;
+  border-radius: 5px;
 }
 
-#color-info{
-    height: 40px;    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 110px;
-    border-bottom: 1px solid black;
-    flex-wrap: wrap;
+#color-info {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  border-bottom: 1px solid black;
+  flex-wrap: wrap;
 }
 
-.color-scheme{
-    border: 2px solid #FCCFCF;    
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 1.2em;
+.color-scheme {
+  border: 2px solid #fccfcf;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
 
-
-#get-scheme-btn{
-    border: 2px solid #FCCFCF;
-    border-radius: 5px;    
-    height: 40px;    
-    font-size: 1.2em;
-    cursor: pointer;
+#get-scheme-btn {
+  border: 2px solid #fccfcf;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
-
-
-#scheme-container{
-    display: flex;
-    flex-direction: row;
-    height: 454px;
-    align-items: center;
-    justify-content: center;
+#scheme-container {
+  display: flex;
+  flex-direction: row;
+  height: 454px;
+  align-items: center;
+  justify-content: center;
 }
 
-.guide-tutorial{
-    animation: rainbow 15s infinite;    
+.guide-tutorial {
+  animation: rainbow 15s infinite;
 }
 
 a {
-    text-decoration: none;
-    color: black;    
+  text-decoration: none;
+  color: black;
 }
 
-.render-colors{
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
+.render-colors {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
 }
 
-#scheme-color-info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-top: 1px solid black;
-    padding: 1.5rem;
+#scheme-color-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  padding: 1.5rem;
 }
 
-.render-hex{
-    margin: 0;
-    padding: 0;
+.render-hex {
+  margin: 0;
+  padding: 0;
 }
 
-.rainbow{
-    animation: rainbow 15s infinite;
+.rainbow {
+  animation: rainbow 15s infinite;
 }
 
 @keyframes rainbow{
@@ -116,8 +112,8 @@ a {
 
 /* tutorial */
 .go-home {
-    border-radius: 5px;
-    padding: 1em ;
-    font-size: 1em;
-    margin:20px 0px 50px 0;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 1em;
+  margin: 20px 0px 50px 0;
 }
