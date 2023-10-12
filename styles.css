@@ -64,6 +64,17 @@ input{
     display: flex;
     flex-direction: row;
     height: 454px;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide-tutorial{
+    animation: rainbow 15s infinite;    
+}
+
+a {
+    text-decoration: none;
+    color: black;    
 }
 
 .render-colors{
@@ -101,4 +112,13 @@ input{
     80%{color: DeepPink;}
     90%{color: DodgerBlue;}
 	100%{color: orange;}
+}
+
+/* tutorial */
+#go-home {
+    border-radius: 5px;
+    padding: 1em 2em;
+    font-size: 1em;
+    background-color: #FCCFCF;
+    margin:20px 0px 50px 0;
 }

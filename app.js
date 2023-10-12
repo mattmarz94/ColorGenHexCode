@@ -47,3 +47,6 @@ document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
   
 });
 
+document.getElementById("go-home").addEventListener("click", () => {
+  console.log("yes")
+})
