@@ -28,13 +28,12 @@ function renderColors(data) {
 }
 
 document.addEventListener("click", (e) => {
-  if (e.target.dataset.hexcolor){
+  if (e.target.dataset.hexcolor) {
     navigator.clipboard.writeText(e.target.dataset.hexcolor);
-    alert("copied the color: " + e.target.dataset.hexcolor)
+    alert("copied the color: " + e.target.dataset.hexcolor);
   } else {
-    
   }
-})
+});
 
 document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
   fetch(
@@ -44,5 +43,4 @@ document.getElementById("get-scheme-btn").addEventListener("click", (e) => {
     .then((data) => renderColors(data));
 
   e.preventDefault();
-  
 });
